@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC-web site</title>
+    <style>
+        body{
+            background-color: #000000;
+            height: 200vh;
+        }
+        .logo img{
+            width: 50px;
+            height: 50px;
+            background-color: aliceblue;
+            border: 0;
+            border-radius: 10px;
+            margin-left: 50px;
+
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            box-shadow: 10px 10px 30px #747272;
+            margin: 20px;
+            border-radius: 10px;
+            
+        }
+        .menu a{
+            text-decoration: none;
+            margin: 20px;
+            font-weight: 500;
+            color: white;
+        }
+        .menu a:hover{
+            font-size: 20px;
+          
+            color: rgb(255, 0, 0);
+        }
+        .part1{
+            background-image: url(img/WnEw7iGmgjiDGDvFwYMZyR84G.jpg);
+            background-repeat: no-repeat;
+            width: 80%;
+            height: 200px;
+            margin-left: 60px;
+            margin-right: 120px;
+            padding: 80px;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            top: -90px;
+            right: 20px;
+            margin: 80px;
+            border: 0;
+            border-radius: 25px;
+            
+        }
+        .part1 button{
+            width: 200px;
+            height: 40px;
+            background-color: #e4002b;
+            border: 0;
+            border-radius: 5px;
+            font-weight: 400;
+            font-size: 15px;
+            color: white;
+            cursor: pointer;
+            margin: 20px;
+            position: relative;
+            top: 120px;
+            
+        }
+        .head{
+            text-align: center;
+            color: white;
+            font-size: 40px;
+        }
+        .first img{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 20px;
+            left: 60px;
+            border: 0;
+            border-radius: 30px;
+        }
+        .first{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+        .Head{
+            position: relative;
+            top: -100px;
+            font-size: 28px;
+            color: rgb(230, 226, 226);
+        }
+        .Head::before{
+            content: "";
+            display: block;
+            width: 400px;
+            height: 1px;
+            background: rgb(184, 180, 183);
+            position: absolute;
+            left: 110px;
+            top: 50%;
+        }
+        .Head::after{
+            content: "";
+            display: block;
+            width: 400px;
+            height: 1px;
+            background: rgb(184, 180, 183);
+            position: absolute;
+            right: 110px;
+            top: 50%;
+        }
+        .card img{
+            width: 100%;
+            border-radius: 5px;
+            transition: transform .2s ease-in-out;
+
+        }
+        .card img:hover{
+            transform: translateY(-15px);
+        }
+        .card{
+            width: 250px;
+            border: 0;
+            border-radius: 12px;
+            background-color: whitesmoke;
+            padding: 15px;
+            box-shadow: 8px 5px 15px rgb(201, 198, 198),
+            -5px -8px 14px rgb(196, 194, 194);
+        }
+        .card button{
+            color: rgb(255, 255, 255);
+            background-color: #000000;
+            border: 0;
+            border-radius: 5px;
+            padding: 7px;
+            cursor: pointer;
+        }
+        .card button:hover{
+            color: #000000;
+            background-color: #9e9c9c;
+        }
+       section{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 25px;
+        margin-left: 40px;
+       }
+       .input{
+        width: 500px;
+        height: 310px;
+        background-color: white;
+        margin: 50px;
+        margin-left: 410px;
+        padding: 30px;
+        border: 0;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgb(161, 160, 160),
+        -5px -8px 10px rgba(245, 245, 245, 0.815);
+       }
+       .input input{
+        width: 400px;
+        height: 40px;
+        padding: 5px;
+        margin: 10px;
+        margin-top: -10px 15px;
+        margin-left: 40px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 15px;
+       }
+       .submit input{
+        width: 200px;
+        position: relative;
+        left: 580px;
+        bottom: 110px;
+        height: 40px;
+        border: 0;
+        border-radius:10px ;
+        background-color: #e4002b;
+        color: aliceblue;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 400;
+       }
+       .input img{
+        width: 20%;
+        margin-top: -20px;
+       }
+       footer p{
+        color: white;
+        text-align: center;
+        font-size: 13px;
+       } 
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/KFC_logo-image.svg.png" alt="">
+            </div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">About us</a>
+                <a href="">Contact </a>
+                <a href="">Branches</a>
+                <a href="">Menu</a>
+                <a href="">SIGN-IN</a>
+            </div>
+        </nav>
+    </header>
+    
+        <div class="first">
+            <img src="img/images (1) logo.jpg" alt="">
+            <h1 class="head">LET'S START ORDERING</h1>
+        </div>
+        <div class="part1">   
+            <button>DELIVARY</button>
+            <button>TAKE AWAY</button>
+            <button>DINE-IN</button>
+
+        </div>
+       <h1 class="head Head">FEATURED PRODUCT</h1>
+        <section>
+            <div class="card">
+                <img src="https://kfcbd.com/storage/products/JNMJXhd9fs8ahFpnTjD30d9jR.jpg" alt="">
+                <h3>Tanddori Zinger</h3>
+                <p>$399</p>
+                <button>ADD TO CART</button>
+            </div>
+            <div class="card">
+                <img src="https://kfcbd.com/storage/products/JUn7NcRO0yUAWbycF7xd6shi4.jpg" alt="">
+                <h3>Bucket</h3>
+                <p>$899</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img src="https://img.favpng.com/14/2/0/kfc-hamburger-fried-chicken-pizza-cheeseburger-png-favpng-fG2pg6pWhL95vhBizynZc8UCR.jpg" alt="">
+                <h3>Hamber cheese Burgur</h3>
+                <p>$499</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img src="https://s.yimg.com/ny/api/res/1.2/aYVDrl31J9UcDcjBKRDAcA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/os/creatr-uploaded-images/2021-09/dbea9cb0-19df-11ec-bfa3-f7fe7fb9c9cc" alt="">
+                <h3>KFC lunch packege</h3>
+                <p>$1099</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img src="https://kfcbd.com/storage/products/GoSPzi5F7T2gBIyrw5XTu3A9n.jpg" alt="">
+                <h3>Fries</h3>
+                <p>$199</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img src="https://giftall.s3.amazonaws.com/uploads/images/product/product_1607714429.jpg" alt="">
+                <h3>Gift packege</h3>
+                <p>$1660</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img  src="https://w7.pngwing.com/pngs/827/1006/png-transparent-california-style-pizza-sicilian-pizza-kfc-take-out-pizza-food-recipe-pizza-delivery-thumbnail.png" alt="">
+                <h3>KFC Hut Pizza</h3>
+                <p>$899</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img src="https://kfcbd.com/storage/products/c9wW9RpRA3Y3CTKCgQRBZQkQY.jpg" alt="">
+                <h3>Special Burgur</h3>
+                <p>$299</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img src="https://kfcbd.com/storage/products/mBey2cci5OJMRL9GKb6STIUwl.jpg" alt="">
+                <h3>BBQ</h3>
+                <p>$599</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img src="https://www.pngplay.com/wp-content/uploads/15/Kfc-Twister-Box-PNG-HD-Quality.png" alt="">
+                <h3>Big Box</h3>
+                <p>$499</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Nd2u5h_hYB0K9WEvwvbFIM0-SAclogCT11Sdkr60ZSAG_lVFIHyBaNNqvgiuMfhUjjE&usqp=CAU" alt="">
+                <h3>Milkshakes</h3>
+                <p>$499</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img src="https://kfc.com.tn/aouina/56363-large_default/twister-box.jpg" alt="">
+                <h3>Twister Box</h3>
+                <p>$550</p>
+                <button>ADD TO CART</button>
+            </div><div class="card">
+                <img src="https://kfcbd.com/storage/products/KIJIaJWwqhM4jkeAxsZwPc4vW.jpg" alt="">
+                <h3>Popcorn Box</h3>
+                <p>$2050</p>
+                <button>ADD TO CART</button></div>
+                <div class="card">
+                    <img src="https://kfcbd.com/storage/products/34zVdoBpP5MOjccFf4W9KVyob.jpg" alt="">
+                    <h3>3 Buckets</h3>
+                    <p>$899</p>
+                    <button>ADD TO CART</button>
+                </div><div class="card">
+                    <img src="https://giftall.s3.amazonaws.com/uploads/images/product/product_60c81b0ce4e8b_1958500950.jpg" alt="">
+                    <h3>Tanddori Comboo</h3>
+                    <p>$1470</p>
+                    <button>ADD TO CART</button>
+                </div><div class="card">
+                    <img src="https://secretrecipebd.com/wp-content/uploads/2017/10/Chicken-Sandwich-.jpeg" alt="">
+                    <h3>Chiken sandwich</h3>
+                    <p>$399</p>
+                    <button>ADD TO CART</button>
+                </div>
+           
+        </section>
+                <div class="input">
+                    <img src="https://thumbs.dreamstime.com/b/kfc-letter-initial-logo-design-vector-illustration-letter-initial-logo-design-vector-illustration-kfc-letter-initial-logo-design-236631065.jpg" alt="">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email address">
+                    <input type="text" placeholder="Location">
+                    
+                </div>
+                <span class="submit">
+                    <input  type="submit" value="Oder">
+                </span>
+        <footer>
+            <p>© Copyright 2023 KFC. All Rights Reserved.</p>
+        </footer>
+</body>
+</html>
